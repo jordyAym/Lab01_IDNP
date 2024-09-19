@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtApellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtNombres" />
 
     <EditText
-        android:id="@+id/editTextText9"
+        android:id="@+id/edtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -56,10 +56,10 @@
         android:hint="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtApellidos" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edtNumero"
         android:layout_width="144dp"
         android:layout_height="44dp"
         android:layout_marginStart="30dp"
@@ -69,12 +69,12 @@
         android:inputType="text"
         android:text=""
         android:hint="Numero"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText4"
+        app:layout_constraintEnd_toStartOf="@+id/edtGrupoSanguineo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/edtGrupoSanguineo"
         android:layout_width="145dp"
         android:layout_height="44dp"
         android:layout_marginTop="20dp"
@@ -84,10 +84,10 @@
         android:text=""
         android:hint="Grupo S."
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/edtOcupacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -97,10 +97,10 @@
         android:hint="Ocupacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/edtGrupoSanguineo" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/edtIE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -110,25 +110,26 @@
         android:hint="I. E."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintTop_toBottomOf="@+id/edtOcupacion" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
         android:text="Registrar"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIE" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLeer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
         android:text="Leer"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
-        tools:layout_editor_absoluteX="222dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIE" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
