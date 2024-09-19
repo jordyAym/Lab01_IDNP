@@ -18,13 +18,14 @@
         app:srcCompat="@drawable/conferencia" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edtNombres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="Nombres"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,11 +38,12 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="Apellidos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNombres" />
 
     <EditText
         android:id="@+id/editTextText9"
@@ -50,7 +52,8 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
@@ -64,7 +67,8 @@
         android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="Numero"
         app:layout_constraintEnd_toStartOf="@+id/editTextText4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
@@ -77,7 +81,8 @@
         android:layout_marginEnd="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="Grupo S."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
 
@@ -88,7 +93,8 @@
         android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="Ocupacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
@@ -100,9 +106,29 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
+        android:hint="I. E."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Leer"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+        tools:layout_editor_absoluteX="222dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
